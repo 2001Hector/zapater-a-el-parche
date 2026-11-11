@@ -27,8 +27,8 @@ import flyerImg from './assets/flyer.jpg';
 // Datos de la zapatería
 const PHONE_NUMBER = "302 832 1439";
 const PHONE_RAW = "573028321439";
-const ADDRESS_DISPLAY = "Cl. 10A #11-4, Maicao, La Guajira";
-const GMAPS_URL = "https://www.google.com/maps/place/Instituto+Pedagogico+de+Maicao/@11.3724305,-72.2401716,57a,75y,230.07h,90t/data=!3m7!1e1!3m5!1sWuS50bcN_6oUXnxrZdxuTQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DWuS50bcN_6oUXnxrZdxuTQ%26yaw%3D230.07159025202776!7i13312!8i6656!4m24!1m17!1m13!4m12!1m4!2m2!1d-72.2334065!2d11.3769908!4e1!1m6!1m2!1s0x8e8bf3b0d7848f1b:0x55815f99b4605c28!2sCalzados+panda,+Cl+10A+%2311-4,+Maicao,+La+Guajira!2m2!1d-72.2379777!2d11.3767467!2m2!3m1!5e2!3m5!1s0x8e8bf3adf4877487:0xa10b7c622b8f6a1d!8m2!3d11.373466!4d-72.2375559!16s%2Fg%2F11h0zj5mt_?entry=ttu&g_ep=EgoyMDI2MTEwOS4wIKXMDSoASAFQAw%3D%3D";
+const ADDRESS_DISPLAY = "11.3723881, -72.2402034, Maicao, La Guajira";
+const GMAPS_URL = "https://www.google.com/maps/@11.3723881,-72.2402034,57a,75y,292.54h,80.29t/data=!3m7!1e1!3m5!1suYntZ39CkJB_LEV_gUIlmQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D9.707807890271411%26panoid%3DuYntZ39CkJB_LEV_gUIlmQ%26yaw%3D292.5376637662215!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI2MTEwOS4wIKXMDSoASAFQAw%3D%3D";
 
 export default function App() {
   // Estado de horario en tiempo real
@@ -775,7 +775,7 @@ console.log("Zapatería El Parche listo");`
                     </button>
 
                     <a 
-                      href="https://waze.com/ul?q=Cl.%2010A%20%2311-4%2C%20Maicao%2C%20La%20Guajira"
+                      href="https://waze.com/ul?ll=11.3723881,-72.2402034&navigate=yes"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs font-semibold py-3 px-3 rounded-xl border border-neutral-700 transition-colors"
@@ -822,7 +822,7 @@ console.log("Zapatería El Parche listo");`
                 <div className="relative flex-1 min-h-[360px] w-full">
                   <iframe 
                     title="Ubicación Zapatería El Parche en Google Maps"
-                    src="https://www.google.com/maps?q=Cl.%2010A%20%2311-4%2C%20Maicao%2C%20La%20Guajira&output=embed"
+                    src="https://www.google.com/maps?q=11.3723881,-72.2402034&output=embed"
                     className="w-full h-full min-h-[360px] border-0 filter invert-[0.9] hue-rotate-180 contrast-[0.95]"
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
