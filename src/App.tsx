@@ -223,21 +223,6 @@ console.log("Zapatería El Parche listo");`
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans selection:bg-lime-400 selection:text-black">
-      {/* Barra superior de anuncios / acción Git */}
-      <div className="bg-lime-950/60 border-b border-lime-500/20 px-4 py-2 text-xs flex items-center justify-between gap-4">
-        <div className="flex items-center gap-2 text-lime-300 mx-auto sm:mx-0">
-          <span className="inline-block w-2 h-2 rounded-full bg-lime-400 animate-pulse" />
-          <span><strong>Proyecto listo para Git:</strong> Contiene index.html, style.css, script.js y carpeta img/</span>
-        </div>
-        <button 
-          onClick={() => setExportModalOpen(true)}
-          className="hidden sm:inline-flex items-center gap-1.5 bg-lime-400 hover:bg-lime-300 text-black font-bold px-3 py-1 rounded text-xs transition-colors cursor-pointer"
-        >
-          <Download className="w-3.5 h-3.5" />
-          <span>Descargar ZIP para GitHub</span>
-        </button>
-      </div>
-
       {/* HEADER PRINCIPAL */}
       <header className="sticky top-0 z-40 bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-6">
