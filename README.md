@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Zapatería El Parche
 
-# Run and deploy your AI Studio app
+Sitio web de la zapatería construido con React, TypeScript y Vite. También incluye una versión independiente en HTML, CSS y JavaScript en `public/static-site/`, disponible desde la función de exportación del sitio.
 
-This contains everything you need to run your app locally.
+## Desarrollo local
 
-View your app in AI Studio: https://ai.studio/apps/202cd78f-1b19-4878-a948-467d8041d71d
+**Requisito:** [Bun](https://bun.sh/)
 
-## Run Locally
+```bash
+bun install
+bun run dev
+```
 
-**Prerequisites:**  Node.js
+Para validar tipos y generar el sitio de producción:
 
+```bash
+bun run lint
+bun run build
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+La salida de producción se genera en `dist/`. No necesita un servidor ni una clave de API para publicarse como sitio estático.
+
+## Publicar en GitHub Pages
+
+El flujo de GitHub Actions instala las dependencias con `bun.lock`, valida TypeScript, construye `dist/` y publica el resultado al hacer push a `main`.
+
+1. En el repositorio de GitHub, abre **Settings > Pages**.
+2. Selecciona **GitHub Actions** como fuente de publicación.
+3. Envía los cambios a la rama `main` y revisa el resultado en la pestaña **Actions**.
+
+La ruta base de Vite está configurada para el repositorio `zapater-a-el-parche`; si cambias el nombre del repositorio, actualiza `base` en `vite.config.ts`.
