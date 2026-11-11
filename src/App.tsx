@@ -781,7 +781,7 @@ console.log("Zapatería El Parche listo");`
                       className="inline-flex items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs font-semibold py-3 px-3 rounded-xl border border-neutral-700 transition-colors"
                     >
                       <Compass className="w-4 h-4 text-lime-400" />
-                      <span>Ruta en Google Maps</span>
+                      <span>Rutas en Google Maps</span>
                     </a>
                   </div>
                 </div>
