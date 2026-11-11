@@ -27,8 +27,8 @@ import flyerImg from './assets/flyer.jpg';
 // Datos de la zapatería
 const PHONE_NUMBER = "302 832 1439";
 const PHONE_RAW = "573028321439";
-const ADDRESS_DISPLAY = "Calle Principal Comercial, Zona Zapaterías";
-const GMAPS_URL = "https://www.google.com/maps/dir/?api=1&destination=Zapater%C3%ADa+El+Parche";
+const ADDRESS_DISPLAY = "Cl. 10A #11-4, Maicao, La Guajira";
+const GMAPS_URL = "https://www.google.com/maps/place/Instituto+Pedagogico+de+Maicao/@11.3724305,-72.2401716,57a,75y,230.07h,90t/data=!3m7!1e1!3m5!1sWuS50bcN_6oUXnxrZdxuTQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DWuS50bcN_6oUXnxrZdxuTQ%26yaw%3D230.07159025202776!7i13312!8i6656!4m24!1m17!1m13!4m12!1m4!2m2!1d-72.2334065!2d11.3769908!4e1!1m6!1m2!1s0x8e8bf3b0d7848f1b:0x55815f99b4605c28!2sCalzados+panda,+Cl+10A+%2311-4,+Maicao,+La+Guajira!2m2!1d-72.2379777!2d11.3767467!2m2!3m1!5e2!3m5!1s0x8e8bf3adf4877487:0xa10b7c622b8f6a1d!8m2!3d11.373466!4d-72.2375559!16s%2Fg%2F11h0zj5mt_?entry=ttu&g_ep=EgoyMDI2MTEwOS4wIKXMDSoASAFQAw%3D%3D";
 
 export default function App() {
   // Estado de horario en tiempo real
@@ -775,7 +775,7 @@ console.log("Zapatería El Parche listo");`
                     </button>
 
                     <a 
-                      href="https://waze.com/ul?q=Zapatería+El+Parche"
+                      href="https://waze.com/ul?q=Cl.%2010A%20%2311-4%2C%20Maicao%2C%20La%20Guajira"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs font-semibold py-3 px-3 rounded-xl border border-neutral-700 transition-colors"
@@ -822,7 +822,7 @@ console.log("Zapatería El Parche listo");`
                 <div className="relative flex-1 min-h-[360px] w-full">
                   <iframe 
                     title="Ubicación Zapatería El Parche en Google Maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127263.6396913418!2d-74.1531818!3d4.6482837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1710000000000!5m2!1ses!2sco" 
+                    src="https://www.google.com/maps?q=Cl.%2010A%20%2311-4%2C%20Maicao%2C%20La%20Guajira&output=embed"
                     className="w-full h-full min-h-[360px] border-0 filter invert-[0.9] hue-rotate-180 contrast-[0.95]"
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"

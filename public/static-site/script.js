@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const addressText = document.getElementById('addressText');
   if (copyBtn && addressText) {
     copyBtn.addEventListener('click', async () => {
-      const textToCopy = "Zapatería El Parche, Calle Principal Comercial (Tel: 302 832 1439)";
+      const textToCopy = `Zapatería El Parche, ${addressText.textContent} (Tel: 302 832 1439)`;
       try {
         await navigator.clipboard.writeText(textToCopy);
         const originalText = copyBtn.innerHTML;
