@@ -21,6 +21,8 @@ import {
   Compass
 } from 'lucide-react';
 import JSZip from 'jszip';
+import logoImg from './assets/logo.jpg';
+import flyerImg from './assets/flyer.jpg';
 
 // Datos de la zapatería
 const PHONE_NUMBER = "302 832 1439";
@@ -118,21 +120,22 @@ export default function App() {
       const zip = new JSZip();
 
       // Cargar archivos estáticos generados
-      const htmlRes = await fetch('/static-site/index.html');
+      const base = import.meta.env.BASE_URL || '/';
+      const htmlRes = await fetch(`${base}static-site/index.html`);
       const htmlText = await htmlRes.text();
       zip.file('index.html', htmlText);
 
-      const cssRes = await fetch('/static-site/style.css');
+      const cssRes = await fetch(`${base}static-site/style.css`);
       const cssText = await cssRes.text();
       zip.file('style.css', cssText);
 
-      const jsRes = await fetch('/static-site/script.js');
+      const jsRes = await fetch(`${base}static-site/script.js`);
       const jsText = await jsRes.text();
       zip.file('script.js', jsText);
 
       // Cargar imagen del flyer y logo
       try {
-        const imgRes = await fetch('/img/flyer.jpg');
+        const imgRes = await fetch(flyerImg);
         const imgBlob = await imgRes.blob();
         zip.folder('img')?.file('flyer.jpg', imgBlob);
       } catch (err) {
@@ -140,7 +143,7 @@ export default function App() {
       }
 
       try {
-        const logoRes = await fetch('/img/logo.jpg');
+        const logoRes = await fetch(logoImg);
         const logoBlob = await logoRes.blob();
         zip.folder('img')?.file('logo.jpg', logoBlob);
       } catch (err) {
@@ -242,12 +245,9 @@ console.log("Zapatería El Parche listo");`
           <a href="#" className="flex items-center group">
             <div className="bg-white rounded-xl px-3 py-1.5 shadow-md border border-neutral-700/80 group-hover:border-lime-400 transition-colors flex items-center justify-center">
               <img 
-                src="/img/logo.jpg" 
+                src={logoImg} 
                 alt="Zapatería El Parche - Tu calzado en buenas manos" 
                 className="h-9 sm:h-11 w-auto object-contain"
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = "/assets/aistudio/logo_42cb539d.jpg";
-                }}
               />
             </div>
           </a>
@@ -367,13 +367,9 @@ console.log("Zapatería El Parche listo");`
                       onClick={() => setFlyerModalOpen(true)}
                     >
                       <img 
-                        src="/img/flyer.jpg" 
+                        src={flyerImg} 
                         alt="Zapatería El Parche - Volante oficial" 
                         className="w-full h-auto object-cover transform group-hover:scale-102 transition duration-300"
-                        onError={(e) => {
-                          // Fallback si la imagen no cargara
-                          (e.currentTarget as HTMLImageElement).src = "/assets/aistudio/image_e23b0109_5d31a20f.jpg";
-                        }}
                       />
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors flex items-center justify-center">
                         <span className="opacity-0 group-hover:opacity-100 bg-neutral-950/80 backdrop-blur-sm text-lime-400 text-xs px-3 py-1.5 rounded-full font-bold border border-lime-400/40 transition duration-200">
@@ -953,12 +949,9 @@ console.log("Zapatería El Parche listo");`
           <div className="flex items-center gap-4">
             <div className="bg-white rounded-xl px-3 py-1.5 border border-neutral-700 shrink-0">
               <img 
-                src="/img/logo.jpg" 
+                src={logoImg} 
                 alt="Zapatería El Parche - Tu calzado en buenas manos" 
                 className="h-10 w-auto object-contain"
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = "/assets/aistudio/logo_42cb539d.jpg";
-                }}
               />
             </div>
             <span className="text-xs text-neutral-400 max-w-xs">
@@ -1014,7 +1007,7 @@ console.log("Zapatería El Parche listo");`
 
             <div className="overflow-hidden rounded-xl border border-neutral-800 max-h-[75vh] flex items-center justify-center">
               <img 
-                src="/img/flyer.jpg" 
+                src={flyerImg} 
                 alt="Volante oficial Zapatería El Parche" 
                 className="w-full h-auto object-contain max-h-[70vh]"
               />
