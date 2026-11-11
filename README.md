@@ -1,6 +1,6 @@
 # Zapatería El Parche
 
-Sitio web de la zapatería construido con React, TypeScript y Vite. También incluye una versión independiente en HTML, CSS y JavaScript en `public/static-site/`, disponible desde la función de exportación del sitio.
+Sitio web de la zapateríaa construido con React, TypeScript y Vite. También incluye una versión independiente en HTML, CSS y JavaScript en `public/static-site/`, disponible desde la función de exportación del sitio.
 
 ## Desarrollo local
 
