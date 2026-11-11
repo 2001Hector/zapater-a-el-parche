@@ -27,7 +27,7 @@ import flyerImg from './assets/flyer.jpg';
 // Datos de la zapatería
 const PHONE_NUMBER = "302 832 1439";
 const PHONE_RAW = "573028321439";
-const ADDRESS_DISPLAY = "11.3723881, -72.2402034, Calle 6 con carrera con carrera 14 Maicao, La Guajira";
+const ADDRESS_DISPLAY = "11.3723881, -72.2402034, Calle 6 con carrera 14 en una esquina Maicao, La Guajira";
 const GMAPS_URL = "https://www.google.com/maps/@11.3723881,-72.2402034,57a,75y,292.54h,80.29t/data=!3m7!1e1!3m5!1suYntZ39CkJB_LEV_gUIlmQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D9.707807890271411%26panoid%3DuYntZ39CkJB_LEV_gUIlmQ%26yaw%3D292.5376637662215!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI2MTEwOS4wIKXMDSoASAFQAw%3D%3D";
 
 export default function App() {
@@ -775,13 +775,13 @@ console.log("Zapatería El Parche listo");`
                     </button>
 
                     <a 
-                      href="https://waze.com/ul?ll=11.3723881,-72.2402034&navigate=yes"
+                      href="https://www.google.com/maps/dir/?api=1&destination=11.3723881%2C-72.2402034"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs font-semibold py-3 px-3 rounded-xl border border-neutral-700 transition-colors"
                     >
                       <Compass className="w-4 h-4 text-lime-400" />
-                      <span>Abrir en Waze</span>
+                      <span>Ruta en Google Maps</span>
                     </a>
                   </div>
                 </div>
