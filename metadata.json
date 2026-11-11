@@ -1,0 +1,6 @@
+{
+  "name": "Zapatería El Parche",
+  "description": "Taller experto en reparación, limpieza y restauración de calzado y tenis. Atención todos los días con cotización rápida por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
